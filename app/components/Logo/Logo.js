@@ -5,9 +5,16 @@ import styles from './styles';
 //stateless component
 const Logo = () => (
   <View style={styles.container}>
-      <Image resizeMode='contain' source={require('./images/acorns.jpeg')}>
-      </Image>
-    <Text>Splash Page</Text>
+    <Text style={styles.text}>Splash Page</Text>
+    <Image
+      style={{
+      flex: 1,
+      alignSelf: 'stretch',
+      width: undefined,
+      height: undefined
+    }}
+   source={require('./images/acorns.jpeg')}>
+    </Image>
   </View>
 );
 
