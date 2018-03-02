@@ -77,6 +77,7 @@ Please find planning [repo here](https://github.com/CherylFrankenfield/squirrele
 
 ### Component Snapshots - Mobile Views
 
+
   ## Known Bugs
 
   _Text ._
