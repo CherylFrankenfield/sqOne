@@ -21,7 +21,7 @@ export default EStyleSheet.create({
     textAlign: 'center',
   },
   textContainer: {
-
+    // alignSelf: 'center',
   },
   input: {
     height: 50,
