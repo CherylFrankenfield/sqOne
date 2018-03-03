@@ -76,11 +76,11 @@ _The app will allow for events to be saved in database._
 Please find planning [repo here](https://github.com/CherylFrankenfield/squirreledaway-planning.git).
 
 ### Component Snapshots - Mobile Views
-
+-To add after navigation successfully renders static screens
 
   ## Known Bugs
 
-  _Text ._
+  _Currently I'm working through different navigation types to be able to properly display static components and screens. After adding three new screens and trying to link with TabNavigator, I'm currently getting an error message about Module not existing in module map so troubleshooting this. Also I noticed there are two App folders in GitHub repo whereas in Atom, I only have one. I will have to troubleshoot this duplication?_
 
   ## Support and contact details
 
