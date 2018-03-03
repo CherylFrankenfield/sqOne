@@ -2,7 +2,6 @@ import {StackNavigator, TabNavigator} from 'react-navigation';
 import Home from '../screens/Home';
 import Login from '../screens/Login';
 import Event from '../screens/Event';
-import EventList from '../screens/EventList';
 import NewEvent from '../screens/NewEvent';
 import {Icon} from 'react-native-elements';
 
@@ -19,9 +18,6 @@ export const Tabs = TabNavigator({
   },
   Login: {
     screen: Login,
-  },
-  EventList: {
-    screen: EventList,
   },
   Event: {
     screen: Event,
