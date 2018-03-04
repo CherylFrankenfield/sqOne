@@ -5,7 +5,7 @@ class NewEvent extends React.Component {
   render(){
     return(
       <View>
-        <Text>New event form goes here</Text>
+        <Text>Add an event to your bucket list.</Text>
       </View>
     );
   }
