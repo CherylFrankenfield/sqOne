@@ -1,6 +1,6 @@
 import React from 'react';
 import {View,Text} from 'react-native';
-import {Container, Content, InputGroup, Input} from 'native-base';
+import {Container, Content, InputGroup, Input, Button} from 'native-base';
 
 class NewEvent extends React.Component {
   render(){
@@ -22,6 +22,7 @@ class NewEvent extends React.Component {
           <InputGroup borderType='underline'>
             <Input placeholder='Notes:'/>
           </InputGroup>
+          <Button primary><Text> ADD EVENT </Text></Button>
         </Content>
       </Container>
     );
@@ -29,8 +30,3 @@ class NewEvent extends React.Component {
 }
 
 export default NewEvent;
-
-
-// <View>
-//   <Text>Add an event to your bucket list.</Text>
-// </View>
