@@ -1,3 +1,4 @@
+import React from 'react';
 import {StackNavigator, TabNavigator} from 'react-navigation';
 import Home from '../screens/Home';
 import Login from '../screens/Login';
@@ -10,10 +11,7 @@ export const Tabs = TabNavigator({
     screen: Home,
     navigationOptions: {
       header: () => null,
-      tabBar: {
-        label: 'Home',
-        icon: ({tintColor}) => <Icon name='list' size={30} color={tintColor}/>
-      }
+      tabBarlabel: 'Home',
     },
   },
   Login: {
@@ -24,14 +22,13 @@ export const Tabs = TabNavigator({
   },
   NewEvent: {
     screen: NewEvent,
-    tabBar: {
-      label: 'NewEvent',
-      icon: ({tintColor}) => <Icon name='plus' size={30} color={tintColor}/>
-    }
+    navigationOptions: {
+      tabBarlabel: 'NewEvent',
+    },
   },
 });
 
-
+// tabBarIcon: ({tintColor}) => <Icon name='plus' size={30} color={tintColor}/>
 
 // export default StackNavigator({
 //   Home: {
