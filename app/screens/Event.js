@@ -21,7 +21,7 @@ class Event extends React.Component {
            </CardItem>
            <CardItem>
              <Body>
-               <Image source={{uri: '../images/pedal.jpg'}} style={{height: 200, width: 200, flex: 1}}/>
+               <Image source={require('../images/pedal.jpg')} style={{height: 300, width: 300, flex: 1}}/>
                <Text>
                  Find out when Loud and Lit and Get Lost rides are this year.
                </Text>
