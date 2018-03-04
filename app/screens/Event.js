@@ -21,7 +21,7 @@ class Event extends React.Component {
            </CardItem>
            <CardItem>
              <Body>
-               <Image source={{uri: './images/pedal.jpg'}} style={{height: 200, width: 200, flex: 1}}/>
+               <Image source={{uri: '../images/pedal.jpg'}} style={{height: 200, width: 200, flex: 1}}/>
                <Text>
                  Find out when Loud and Lit and Get Lost rides are this year.
                </Text>
@@ -44,22 +44,3 @@ class Event extends React.Component {
 
 
 export default Event;
-
-
-
-
-// <Card
-//   title='Pedalpalooza'
-//   image={require('../images/pedal.jpg')}>
-//   <Text>Date: June 2018</Text>
-//   <Text>Price: 0 - Free</Text>
-//   <Text>Location: Bike rides around Portland, OR</Text>
-//   <Text style={{marginBottom: 10}}>
-//   Find out when Loud and Lit and Get Lost rides are this year.
-//   </Text>
-//   <Button
-//   icon={{name: 'code'}}
-//   backgroundColor='#03A9F4'
-//   buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-//   title='VIEW NOW' />
-// </Card>
