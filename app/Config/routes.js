@@ -5,6 +5,7 @@ import Login from '../screens/Login';
 import Event from '../screens/Event';
 import NewEvent from '../screens/NewEvent';
 import {Icon} from 'react-native-elements';
+// import Icon from 'react-native-vector-icons/MaterialIcons';
 
 export const Tabs = TabNavigator({
   Home: {
@@ -12,7 +13,7 @@ export const Tabs = TabNavigator({
     navigationOptions: {
       header: () => null,
       tabBarlabel: 'Home',
-    },
+    }
   },
   Login: {
     screen: Login,
@@ -24,7 +25,7 @@ export const Tabs = TabNavigator({
     screen: NewEvent,
     navigationOptions: {
       tabBarlabel: 'NewEvent',
-    },
+    }
   },
 });
 
