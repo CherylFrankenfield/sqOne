@@ -16,14 +16,21 @@ class Logo extends React.Component {
           <View style={styles.textContainer}>
             <Text style={styles.name}>Squirreled Away</Text>
             <Text style={styles.subhead}>Your local bucket list.</Text>
-            <Button style={styles.button} block><Text> LOGIN WITH GOOGLE </Text></Button>
+            <TouchableHighlight
+              onPress={()=> this.props.navigation.navigate('Home')}>
+              <Button style={styles.button} block><Text> LOGIN WITH GOOGLE </Text></Button>
+            </TouchableHighlight>
             <InputGroup style={styles.input} borderType='underline'>
               <Input placeholder='Email address'/>
             </InputGroup>
+            <InputGroup style={styles.input} borderType='underline'>
+              <Input placeholder='Password'/>
+            </InputGroup>
             <TouchableHighlight
-              onPress={()=> this.props.navigation.navigate('Login')}>
-            <Button block><Text> SIGNUP </Text></Button>
+              onPress={()=> this.props.navigation.navigate('Home')}>
+              <Button block><Text> Login </Text></Button>
             </TouchableHighlight>
+            <Text style={styles.signup}>Don't have an account? Sign up here.</Text>
           </View>
         </ImageBackground>
       </View>

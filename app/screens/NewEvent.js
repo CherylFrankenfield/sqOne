@@ -1,5 +1,5 @@
 import React from 'react';
-import {View,Text} from 'react-native';
+import {View,Text, TouchableHighlight} from 'react-native';
 import {Container, Content, InputGroup, Input, Button} from 'native-base';
 
 class NewEvent extends React.Component {
@@ -22,7 +22,9 @@ class NewEvent extends React.Component {
           <InputGroup borderType='underline'>
             <Input placeholder='Notes:'/>
           </InputGroup>
-          <Button primary><Text> ADD EVENT </Text></Button>
+          <TouchableHighlight>
+            <Button block><Text> ADD EVENT </Text></Button>
+          </TouchableHighlight>
         </Content>
       </Container>
     );
