@@ -76,15 +76,8 @@ _The app will allow for events to be saved in database._
 Please find planning [repo here](https://github.com/CherylFrankenfield/squirreledaway-planning.git).
 
 ### Component Snapshots - Mobile Views
-[Login Screen]('./Login-screen.png')
 
-[Single Event]('./single-event.png')
-
-[Bucket List]('./bucket-list.png')
-
-[Add Event]('./add-event.png')
-
-[Category List]('./list-by-category.png')
+Available in UI Images folder
 
   ## Known Bugs
 
