@@ -76,7 +76,15 @@ _The app will allow for events to be saved in database._
 Please find planning [repo here](https://github.com/CherylFrankenfield/squirreledaway-planning.git).
 
 ### Component Snapshots - Mobile Views
--To add after navigation successfully renders static screens
+[Login Screen]('./Login-screen.png')
+
+[Single Event]('./single-event.png')
+
+[Bucket List]('./bucket-list.png')
+
+[Add Event]('./add-event.png')
+
+[Category List]('./list-by-category.png')
 
   ## Known Bugs
 
@@ -92,6 +100,7 @@ Please find planning [repo here](https://github.com/CherylFrankenfield/squirrele
   * React Native
   * React Navigation Router
   * Redux
+  * Native Base - UI Library
   * Webpack
   * Firebase
   * XCode - mobile emulator
