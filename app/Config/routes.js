@@ -1,10 +1,10 @@
 import React from 'react';
 import {StackNavigator, TabNavigator} from 'react-navigation';
 import Home from '../screens/Home';
-// import Login from '../screens/Login';
 import Event from '../screens/Event';
 import NewEvent from '../screens/NewEvent';
 import EventList from '../screens/EventList';
+// import Login from '../screens/Login';
 // import {Icon} from 'react-native-elements';
 // import Icon from 'react-native-vector-icons/MaterialIcons';
 
@@ -32,7 +32,7 @@ export const Tabs = TabNavigator({
 
 // tabBarIcon: ({tintColor}) => <Icon name='plus' size={30} color={tintColor}/>
 
-// export default StackNavigator({
+// export const Stacks = StackNavigator({
 //   Home: {
 //     screen: Home,
 //     navigationOptions: {

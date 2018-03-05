@@ -1,7 +1,7 @@
 import React from 'react';
-import Home from './screens/Home';
 import EStyleSheet from 'react-native-extended-stylesheet';
 import { StackNavigator, Tabs} from './config/routes';
+// import {View} from 'react-native';
 
 EStyleSheet.build({
   $primaryBlue: '#4F6D7A',
