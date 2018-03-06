@@ -17,7 +17,7 @@ class Profile extends React.Component {
             containerStyle={{flex: 2, marginLeft: 20, marginTop: 115}}
             />
         </View>
-        <View style={styles.textContainer}>
+        <View style={styles.textContainer} behavior='padding'>
           <InputGroup style={styles.input} borderType='underline'>
             <Input placeholder='EDIT NAME'/>
           </InputGroup>
