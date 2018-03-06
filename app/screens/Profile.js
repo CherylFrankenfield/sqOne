@@ -1,6 +1,7 @@
 import React from 'react';
 import {View,Text, StyleSheet} from 'react-native';
 import {Avatar} from 'react-native-elements';
+import {Button, InputGroup, Input} from 'native-base';
 
 class Profile extends React.Component {
   render() {
@@ -17,11 +18,21 @@ class Profile extends React.Component {
             />
         </View>
         <View style={styles.textContainer}>
-          <Text>NAME: </Text>
-          <Text>EDIT PASSWORD: </Text>
-          <Text>EDIT EMAIL: </Text>
-          <Text>SETTINGS: </Text>
-          <Text>NOTIFICATIONS: </Text>
+          <InputGroup style={styles.input} borderType='underline'>
+            <Input placeholder='EDIT NAME'/>
+          </InputGroup>
+          <InputGroup style={styles.input} borderType='underline'>
+            <Input placeholder='EDIT EMAIL'/>
+          </InputGroup>
+          <InputGroup style={styles.input} borderType='underline'>
+            <Input placeholder='EDIT PASSWORD'/>
+          </InputGroup>
+          <InputGroup style={styles.input} borderType='underline'>
+            <Input placeholder='SETTINGS'/>
+          </InputGroup>
+          <InputGroup style={styles.input} borderType='underline'>
+            <Input placeholder='NOTIFICATIONS'/>
+          </InputGroup>
         </View>
       </View>
     );
@@ -33,6 +44,7 @@ export default Profile;
 const styles = StyleSheet.create({
   mainContainer: {
     backgroundColor: '#C8EDF3',
+    flex: 1,
   },
   textContainer: {
     padding: 20,
