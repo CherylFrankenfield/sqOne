@@ -3,12 +3,7 @@ import {View,Text, TouchableHighlight} from 'react-native';
 import {Container, InputGroup, Input, Button} from 'native-base';
 import {InputNewBucketItem} from '../components/TextInput';
 
-
 class NewEvent extends React.Component {
-
-  handleNewEventSubmission() {
-    console.log('new event works')
-  };
 
   render(){
     return(

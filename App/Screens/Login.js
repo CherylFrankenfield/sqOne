@@ -1,6 +1,7 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 import {StackNavigator} from 'react-navigation';
+import Logo from '../components/Logo';
 
 class Login extends React.Component {
   static navigationOptions = {
@@ -9,9 +10,9 @@ class Login extends React.Component {
 
   render() {
     return(
-      <View>
-        <Text>Login screen</Text>
-      </View>
+      <Container>
+        <Logo />
+      </Container>
     );
   }
 };
