@@ -1,5 +1,5 @@
 import React from 'react';
-import {View,Text, TouchableHighlight} from 'react-native';
+import {View,Text, TouchableHighlight, KeyboardAvoidingView} from 'react-native';
 import {Container, Content, InputGroup, Input, Button} from 'native-base';
 
 class NewEvent extends React.Component {
