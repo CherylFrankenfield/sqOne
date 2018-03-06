@@ -31,6 +31,7 @@ class Logo extends React.Component {
               <Button block><Text> LOGIN </Text></Button>
             </TouchableHighlight>
             <Text style={styles.signup}>Don't have an account? Sign up here.</Text>
+            <Text style={styles.signup}>Forgot password? Click here.</Text>
           </View>
         </ImageBackground>
       </View>
