@@ -4,6 +4,7 @@ import Home from '../screens/Home';
 import Event from '../screens/Event';
 import NewEvent from '../screens/NewEvent';
 import EventList from '../screens/EventList';
+import Icon from 'react-native-vector-icons/FontAwesome';
 // import Login from '../screens/Login';
 // import {Icon} from 'react-native-elements';
 // import Icon from 'react-native-vector-icons/MaterialIcons';
@@ -18,9 +19,18 @@ export const Tabs = TabNavigator({
   },
   EventList: {
     screen: EventList,
+    navigationOptions: {
+      header: {
+        visible: true,
+        title: 'Bucket List',
+      }
+    }
   },
   Event: {
     screen: Event,
+    navigationOptions: {
+      tabBarlabel: 'Event',
+    }
   },
   NewEvent: {
     screen: NewEvent,
@@ -35,12 +45,8 @@ export const Tabs = TabNavigator({
 // export const Stacks = StackNavigator({
 //   Home: {
 //     screen: Home,
-//     navigationOptions: {
-//       header: () => null,
-//     },
 //   },
 //   Login: {
 //     screen: Login,
 //   },
-//     initialRouteName: 'Home',
 // });

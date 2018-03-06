@@ -38,7 +38,7 @@ export default EventList;
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 20,
+    marginTop: 60,
     flex: 1,
   },
   row: {

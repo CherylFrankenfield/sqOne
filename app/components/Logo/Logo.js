@@ -28,7 +28,7 @@ class Logo extends React.Component {
             </InputGroup>
             <TouchableHighlight
               onPress={()=> this.props.navigation.navigate('Home')}>
-              <Button block><Text> Login </Text></Button>
+              <Button block><Text> LOGIN </Text></Button>
             </TouchableHighlight>
             <Text style={styles.signup}>Don't have an account? Sign up here.</Text>
           </View>
