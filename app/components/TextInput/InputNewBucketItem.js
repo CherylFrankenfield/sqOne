@@ -32,3 +32,11 @@ class InputNewBucketItem extends React.Component {
 }
 
 export default InputNewBucketItem;
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: 'honeydew',
+    justifyContent: 'center',
+  },
+})
