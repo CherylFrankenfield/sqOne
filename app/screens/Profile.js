@@ -51,8 +51,6 @@ const styles = StyleSheet.create({
     marginTop: 50,
   },
     profileHeader: {
-    color: 'white',
-    textAlign: 'center',
     backgroundColor: '#FEC0AA',
     marginTop: 50,
   },
