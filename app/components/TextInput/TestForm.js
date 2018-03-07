@@ -1,9 +1,17 @@
 import React from 'react';
 import {View, Text, Alert, StyleSheet, TouchableOpacity, TextInput} from 'react-native';
+// import styles from './styles'
+
+// constructor(props){
+//   super(props);
+//   this.state = {
+//
+//   }
+// }
 
 class TestForm extends React.Component {
-  state= {}
-
+  state = {}
+  
   renderTextField(options){
     return(
       <TextInput
@@ -51,13 +59,14 @@ export default TestForm;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'honeydew';
+    flex: 1,
+    backgroundColor: 'honeydew',
     borderRadius: 3,
     padding: 10,
     marginBottom: 20,
   },
   instructions: {
-    color: 'gray';
+    color: 'gray',
     fontSize: 20,
     marginTop: 20,
     marginBottom: 20,

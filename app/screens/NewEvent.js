@@ -1,33 +1,33 @@
 import React from 'react';
-import {View,Text,ScrollView, StyleSheet} from 'react-native';
+import {View,Text,StyleSheet, TouchableHighlight} from 'react-native';
 import {Container, InputGroup, Input, Button} from 'native-base';
-import InputNewBucketItem from '../components/TextInput';
-import TestForm from '../components/TextInput';
+// import InputNewBucketItem from '../components/TextInput';
 
 class NewEvent extends React.Component {
-
   render() {
     return (
-      <View style={styles.container}>
-        <ScrollView style={styles.scrollContainer}>
-          <TestForm />
-        </ScrollView>
+      <View>
+        <InputGroup borderType='underline'>
+          <Input placeholder='New Bucket List Item:'/>
+        </InputGroup>
+        <InputGroup borderType='underline'>
+          <Input placeholder='Date:'/>
+        </InputGroup>
+        <InputGroup borderType='underline'>
+          <Input placeholder='Price:'/>
+        </InputGroup>
+        <InputGroup borderType='underline'>
+          <Input placeholder='Location:'/>
+        </InputGroup>
+        <InputGroup borderType='underline'>
+          <Input placeholder='Notes:'/>
+        </InputGroup>
+        <TouchableHighlight>
+          <Button block><Text> ADD EVENT </Text></Button>
+        </TouchableHighlight>
       </View>
     );
   }
 }
 
 export default NewEvent;
-
-
-// <InputNewBucketItem/>
-
-const styles = StyleSheet.create({
-  container: {
-    backgroundColor: '#ecf0f1',
-    flex: 1,
-  },
-  scrollContainer: {
-    padding: 15,
-  },
-});
