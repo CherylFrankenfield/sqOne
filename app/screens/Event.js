@@ -14,7 +14,7 @@ class Event extends React.Component {
         <Text style={{marginBottom: 10}}>
         Find out when Loud and Lit and Get Lost rides are this year. Also find out when Bowie vs. Prince ride is?
         </Text>
-        <Text style={{marginBottom: 10}}> $0 - Free </Text>
+        <Text style={{marginBottom: 10}}> $0 - Free</Text>
         <Text style={{marginBottom: 10}}> Portland, OR </Text>
         <Button
         backgroundColor='#03A9F4'
