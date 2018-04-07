@@ -21,7 +21,7 @@ export const Tabs = TabNavigator({
     navigationOptions: {
       tabBarlabel: 'List',
       tabBarIcon: () => ( <Icon name="list" size={30}  color={'black'}/>)
-    }  
+    }
   },
   Event: {
     screen: Event,
@@ -45,14 +45,3 @@ export const Tabs = TabNavigator({
     }
   },
 });
-
-// tabBarIcon: ({tintColor}) => <Icon name='plus' size={30} color={tintColor}/>
-
-// export const Stacks = StackNavigator({
-//   Home: {
-//     screen: Home,
-//   },
-//   Login: {
-//     screen: Login,
-//   },
-// });
