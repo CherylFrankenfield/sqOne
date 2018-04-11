@@ -15,14 +15,15 @@ class NewEvent extends React.Component {
   };
 
   eventSubmitHandler = () => {
-    if (this.state.placeName.trim() === '') {
+    if (this.state.eventName.trim() === '') {
       return;
     }
-    this.setState(prevState => {
-      return {
-        bucketlist: prevState.bucketlist.concat(prevState.eventName)
-      };
-    });
+    this.props.onEventAdded(this.state.eventName);
+    // this.setState(prevState => {
+    //   return {
+    //     bucketlist: prevState.bucketlist.concat(prevState.eventName)
+    //   };
+    // });
   };
 
   render() {
@@ -70,7 +71,7 @@ export default NewEvent;
 
 
 
-
+//Integrate other input later:
 // <Input placeholder='Date:'/>
 // <Input placeholder='Price:'/>
 // <Input placeholder='Location:'/>

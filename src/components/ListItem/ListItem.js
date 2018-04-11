@@ -1,5 +1,6 @@
 import React from 'react';
-import {View,Text,StyleSheet,TouchableOpacity,Image} from 'react-native';
+import {View,Text,TouchableOpacity,Image} from 'react-native';
+import styles from './styles';
 
 const listItem = props => (
   <TouchableOpacity onPress={props.onItemPressed}>
@@ -13,16 +14,5 @@ const listItem = props => (
     </View>
   </TouchableOpacity>
 );
-
-const styles = StyleSheet.create({
-  bucketlistItem: {
-    width: '100%',
-    padding: 5
-  },
-  bucketlistImage: {
-    height: 20,
-    width: 20
-  }
-});
 
 export default listItem;
