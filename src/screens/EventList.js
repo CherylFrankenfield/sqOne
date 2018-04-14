@@ -12,91 +12,50 @@ import { Container, Content, List, ListItem, Thumbnail} from 'native-base';
 //
 // const extractKey = ({id}) => id
 
-class EventList extends React.Component {
+const eventList = props => {
 
-  renderItem = ({item}) => {
-    return (
-      <View>
-        <Text style={styles.row}>{item.text}</Text>
-      </View>
-    );
-  }
+  // renderItem = ({item}) => {
+  //   return (
+  //     <View>
+  //       <Text style={styles.row}>{item.text}</Text>
+  //     </View>
+  //   );
+  // }
 
-  render(){
-    return(
-      <Container>
-        <Content>
-            <List>
-              <ListItem>
-                <Thumbnail square size={80} source={require('../images/mushroom.jpg')} />
-                <Text>Mushroom Hunting</Text>
-                <Text note> --Fall</Text>
-              </ListItem>
-              <ListItem>
-                <Thumbnail square size={80} source={require('../images/pedal.jpg')} />
-                <Text>Pedalpalooza</Text>
-                <Text note> --June 2018</Text>
-              </ListItem>
-              <ListItem>
-                <Thumbnail square size={80} source={require('../images/enchantments.jpg')} />
-                <Text>Trail Run The Enchantments</Text>
-                <Text note> --Fall</Text>
-              </ListItem>
-              <ListItem>
-                <Thumbnail square size={80} source={require('../images/alpenrose.jpg')} />
-                <Text>Velodrome Track</Text>
-                <Text note> --August</Text>
-              </ListItem>
-              <ListItem>
-                <Thumbnail square size={80} source={require('../images/Mt_Adams.jpg')} />
-                <Text>Climb Mt. Adams</Text>
-                <Text note> --June/July</Text>
-              </ListItem>
-              <ListItem>
-                <Thumbnail square size={80} source={require('../images/Mt_Adams.jpg')} />
-                <Text>Climb Mt. Adams</Text>
-                <Text note> --June/July</Text>
-              </ListItem>
-              <ListItem>
-                <Thumbnail square size={80} source={require('../images/Mt_Adams.jpg')} />
-                <Text>Climb Mt. Adams</Text>
-                <Text note> --June/July</Text>
-              </ListItem>
-              <ListItem>
-                <Thumbnail square size={80} source={require('../images/Mt_Adams.jpg')} />
-                <Text>Climb Mt. Adams</Text>
-                <Text note> --June/July</Text>
-              </ListItem>
-              <ListItem>
-                <Thumbnail square size={80} source={require('../images/Mt_Adams.jpg')} />
-                <Text>Climb Mt. Adams</Text>
-                <Text note> --June/July</Text>
-              </ListItem>
-              <ListItem>
-                <Thumbnail square size={80} source={require('../images/Mt_Adams.jpg')} />
-                <Text>Climb Mt. Adams</Text>
-                <Text note> --June/July</Text>
-              </ListItem>
-            </List>
-        </Content>
-      </Container>
-    );
-  }
+  return(
+    <FlatList
+      style={styles.listContainer}
+      // data={props.bucketlist}
+      renderItem = {(info) => (
+        <ListItem
+          eventName={info.item.name}
+          onItemPressed={() =>
+          props.onItemSelected(info.item.key)}
+        />
+      )}
+    />
+  );
 };
 
-export default EventList;
+export default eventList;
 
 const styles = StyleSheet.create({
-  container: {
-    marginTop: 60,
-    flex: 1,
-  },
-  row: {
-    padding: 15,
-    marginBottom: 5,
-    backgroundColor: '#D8A931',
-  },
-})
+  listContainer: {
+    width: "100%"
+  }
+});
+
+// const styles = StyleSheet.create({
+//   container: {
+//     marginTop: 60,
+//     flex: 1,
+//   },
+//   row: {
+//     padding: 15,
+//     marginBottom: 5,
+//     backgroundColor: '#D8A931',
+//   },
+// })
 
 
 
@@ -106,3 +65,62 @@ const styles = StyleSheet.create({
 //   renderItem={this.renderItem}
 //   keyExtractor={extractKey}
 // />
+
+
+//Hard coded list items:
+// <Container>
+//   <Content>
+//       <List>
+//         <ListItem>
+//           <Thumbnail square size={80} source={require('../images/mushroom.jpg')} />
+//           <Text>Mushroom Hunting</Text>
+//           <Text note> --Fall</Text>
+//         </ListItem>
+//         <ListItem>
+//           <Thumbnail square size={80} source={require('../images/pedal.jpg')} />
+//           <Text>Pedalpalooza</Text>
+//           <Text note> --June 2018</Text>
+//         </ListItem>
+//         <ListItem>
+//           <Thumbnail square size={80} source={require('../images/enchantments.jpg')} />
+//           <Text>Trail Run The Enchantments</Text>
+//           <Text note> --Fall</Text>
+//         </ListItem>
+//         <ListItem>
+//           <Thumbnail square size={80} source={require('../images/alpenrose.jpg')} />
+//           <Text>Velodrome Track</Text>
+//           <Text note> --August</Text>
+//         </ListItem>
+//         <ListItem>
+//           <Thumbnail square size={80} source={require('../images/Mt_Adams.jpg')} />
+//           <Text>Climb Mt. Adams</Text>
+//           <Text note> --June/July</Text>
+//         </ListItem>
+//         <ListItem>
+//           <Thumbnail square size={80} source={require('../images/Mt_Adams.jpg')} />
+//           <Text>Climb Mt. Adams</Text>
+//           <Text note> --June/July</Text>
+//         </ListItem>
+//         <ListItem>
+//           <Thumbnail square size={80} source={require('../images/Mt_Adams.jpg')} />
+//           <Text>Climb Mt. Adams</Text>
+//           <Text note> --June/July</Text>
+//         </ListItem>
+//         <ListItem>
+//           <Thumbnail square size={80} source={require('../images/Mt_Adams.jpg')} />
+//           <Text>Climb Mt. Adams</Text>
+//           <Text note> --June/July</Text>
+//         </ListItem>
+//         <ListItem>
+//           <Thumbnail square size={80} source={require('../images/Mt_Adams.jpg')} />
+//           <Text>Climb Mt. Adams</Text>
+//           <Text note> --June/July</Text>
+//         </ListItem>
+//         <ListItem>
+//           <Thumbnail square size={80} source={require('../images/Mt_Adams.jpg')} />
+//           <Text>Climb Mt. Adams</Text>
+//           <Text note> --June/July</Text>
+//         </ListItem>
+//       </List>
+//   </Content>
+// </Container>

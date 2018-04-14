@@ -23,8 +23,13 @@ const Event = props => {
         <View style={styles.modalContainer}>
           {modalContent}
           <View>
-            <Button title='Delete' color='red' onPress={props.onItemDeleted} />
-            <Button title='Close' onPress={props.onModalClosed} />
+            <Button
+              title='Delete'
+              color='red'
+              onPress={props.onItemDeleted} />
+            <Button
+              title='Close'
+              onPress={props.onModalClosed} />
           </View>
         </View>
       </Modal>
@@ -55,7 +60,7 @@ const styles = StyleSheet.create({
   },
   bucketlistImage: {
     width: '100%',
-    height: 300
+    height: 200
   },
   bucketlistItem: {
     fontWeight: 'bold',
