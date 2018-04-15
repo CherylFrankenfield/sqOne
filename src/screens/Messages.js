@@ -1,7 +1,18 @@
-import React, {Component} from 'react';
-import {View,Text,Button} from 'react-native';
+import React from 'react';
+import {View,Text,Button,Image} from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
-class Messages extends Component {
+class Messages extends React.Component {
+  static navigationOptions = {
+    drawerLabel: 'Messages',
+    drawerIcon: () => (
+      <Icon
+        name='comments'
+        size={25}
+        color={'black'}
+      />
+    )
+  }
 
   render() {
     return(

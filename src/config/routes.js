@@ -77,5 +77,9 @@ export const DrawerNav = DrawerNavigator({
   },
   Logout: {
     screen: Logout
-  }
+  },
+},{
+  initialRouteName: 'Home',
+  drawerPosition: 'left',
+  drawerBackgroundColor:'#D9E5D6',
 })
