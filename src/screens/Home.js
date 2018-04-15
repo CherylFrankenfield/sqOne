@@ -8,10 +8,16 @@ export default () => (
   <Container>
     <Header>
       <Left>
-        <Icon name='ios-menu' onPress={() => this.props.navigation.navigate('Page1')} />
+        <Icon
+          name='ios-menu'
+          onPress={() => this.props.navigation.navigate('Messages')}
+        />
       </Left>
     </Header>
-    <StatusBar translucent={false} barStyle="light-content" />
+    <StatusBar
+      translucent={false}
+      barStyle='light-content' 
+    />
     <Logo />
     <View />
   </Container>

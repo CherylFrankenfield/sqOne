@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
-import {View,Text,Button} from 'react-native';
+import React from 'react';
+import {View,Text,Button,StyleSheet} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-class Logout extends Component {
+class Logout extends React.Component {
   static navigationOptions = {
     drawerLabel: 'Logout',
     drawerIcon: () => (
@@ -16,12 +16,29 @@ class Logout extends Component {
 
   render() {
     return(
-      <View>
-        <Text>Log Out Screen</Text>
-        <Button title='Logout' />
+      <View style={styles.logoutContainer}>
+        <Text>Log out of SquirreledAway</Text>
+        <Button
+          title='Logout'
+          style={styles.logoutButton}
+        />
       </View>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  logoutContainer: {
+    marginTop: 40,
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    width: '100%',
+  },
+  logoutButton: {
+    marginTop: 10,
+    width: '30%',
+  }
+});
+
 
 export default Logout;
