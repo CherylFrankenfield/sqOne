@@ -1,7 +1,9 @@
 import React from 'react';
 import {StackNavigator, TabNavigator, DrawerNavigator, NavigationActions} from 'react-navigation';
+
 import Logout from '../screens/Logout';
 import Settings from '../screens/Settings';
+import Messages from '../screens/Messages';
 import Auth from '../screens/Auth';
 
 import Home from '../screens/Home';
@@ -66,11 +68,14 @@ export const Tabs = TabNavigator({
 })
 
 export const DrawerNav = DrawerNavigator({
-  // Home: Tabs,
-  Logout: {
-    screen: Logout
+  Home: Tabs,
+  Messages: {
+    screen: Messages
   },
   Settings: {
     screen: Settings
+  },
+  Logout: {
+    screen: Logout
   }
 })
