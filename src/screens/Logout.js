@@ -1,16 +1,16 @@
 import React, {Component} from 'react';
 import {View,Text,Button} from 'react-native';
 
-class Page2 extends Component {
+class Logout extends Component {
 
   render() {
     return(
       <View>
-        <Text>Page 2 Drawer</Text>
+        <Text>Log Out Screen</Text>
         <Button title='Logout' />
       </View>
     );
   }
 }
 
-export default Page2;
+export default Logout;

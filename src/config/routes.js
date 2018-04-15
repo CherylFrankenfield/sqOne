@@ -1,7 +1,9 @@
 import React from 'react';
 import {StackNavigator, TabNavigator, DrawerNavigator, NavigationActions} from 'react-navigation';
-import Page1 from '../screens/Page1';
-import Page2 from '../screens/Page2';
+import Logout from '../screens/Logout';
+import Settings from '../screens/Settings';
+import Auth from '../screens/Auth';
+
 import Home from '../screens/Home';
 import Event from '../screens/Event';
 import NewEvent from '../screens/NewEvent';
@@ -10,11 +12,17 @@ import Profile from '../screens/Profile';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 export const Nav = StackNavigator({
-  Home: {
-    screen: Home,
-    navigationOptions: ({navigation}) => ({
-      headerLeft: <Icon name='list' size={35} onPress={ () => navigation.navigate('DrawerToggle') } />
-    })
+  // Home: {
+  //   screen: Home,
+  //   navigationOptions: ({navigation}) => ({
+  //     headerLeft: <Icon name='list' size={35} onPress={ () => navigation.navigate('DrawerToggle') } />
+  //   })
+  // }
+  Auth: {
+    screen: Auth,
+    navigationOptions: {
+      title: 'Welcome',
+    }
   }
 })
 
@@ -59,12 +67,10 @@ export const Tabs = TabNavigator({
 
 export const DrawerNav = DrawerNavigator({
   // Home: Tabs,
-  Page1: {
-    screen: Page1
+  Logout: {
+    screen: Logout
   },
-  Page2: {
-    screen: Page2
-  },
-  initialRouteName: 'Page1',
-  drawerPosition: 'left'
+  Settings: {
+    screen: Settings
+  }
 })
