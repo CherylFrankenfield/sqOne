@@ -22,10 +22,10 @@ class Messages extends React.Component {
           <List>
             <ListItem avatar>
               <Left>
-                <Thumbnail source={{ uri: 'https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg' }} />
+                <Thumbnail source={{ uri: 'https://images.pexels.com/photos/371160/pexels-photo-371160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260' }} />
               </Left>
               <Body>
-                <Text>Zoo Lander</Text>
+                <Text>Miss Carol</Text>
                 <Text note>Doing what you like will always keep you happy . .</Text>
               </Body>
               <Right>
@@ -34,7 +34,7 @@ class Messages extends React.Component {
             </ListItem>
             <ListItem avatar>
               <Left>
-                <Thumbnail source={{ uri: 'https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg' }} />
+                <Thumbnail source={{ uri: 'https://images.pexels.com/photos/371160/pexels-photo-371160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260' }} />
               </Left>
               <Body>
                 <Text>Sterling Archer</Text>
