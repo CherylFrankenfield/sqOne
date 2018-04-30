@@ -11,7 +11,7 @@ class Profile extends React.Component {
           <Avatar
             xlarge
             rounded
-            source={{uri: "https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg"}}
+            source={{uri: "https://images.pexels.com/photos/206434/pexels-photo-206434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"}}
             onPress={() => console.log("Works!")}
             activeOpacity={0.7}
             containerStyle={{flex: 2, marginLeft: 20, marginTop: 115}}
