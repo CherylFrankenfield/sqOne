@@ -9,13 +9,17 @@ EStyleSheet.build({
 });
 
 class App extends React.Component {
+
   render() {
     return(
       // <Tabs />
-      <DrawerNav />
+      <DrawerNav
+        
+      />
     );
   }
 }
+
 export default App;
 // export default () => <Tabs />;
 // export default () => <StackNavigator />;

@@ -2,16 +2,6 @@ import React from 'react';
 import {Text, FlatList, View, StyleSheet} from 'react-native';
 import { Container, Content, List, ListItem, Thumbnail} from 'native-base';
 
-// const rows = [
-//   {id: 0, text: 'Movies'},
-//   {id: 1, text: 'Restaurants'},
-//   {id: 2, text: 'Music'},
-//   {id: 3, text: 'Arts/Museums'},
-//   {id: 4, text: 'Outdoors'},
-// ]
-//
-// const extractKey = ({id}) => id
-
 const eventList = props => {
 
   // renderItem = ({item}) => {
@@ -41,7 +31,7 @@ export default eventList;
 
 const styles = StyleSheet.create({
   listContainer: {
-    width: "100%"
+    width: '100%'
   }
 });
 
